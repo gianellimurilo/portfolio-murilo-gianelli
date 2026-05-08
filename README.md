@@ -7,7 +7,7 @@
 
 Meu portfólio pessoal como **Desenvolvedor Back-end Júnior**, construído com HTML, CSS e JavaScript. Um site moderno, responsivo e com tema escuro para apresentar meus projetos, habilidades e formas de contato.
 
-🔗 **Acesse o site:** [gianellimurilo.github.io/Portfolio-Murilo-Gianelli](https://gianellimurilo.github.io/Portfolio-Murilo-Gianelli/)
+🔗 **Acesse o site:** [gianellimurilo.github.io/Portfolio-Murilo-Gianelli](https://gianellimurilo.github.io/portfolio-murilo-gianelli/)
 
 ---
 
