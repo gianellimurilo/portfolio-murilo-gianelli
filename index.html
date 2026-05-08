@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark" data-palette="purple">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfólio pessoal — Murilo Gianelli Borges" />
+  <title>Portfólio • Murilo Gianelli Borges</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- BG decor -->
+  <div class="bg">
+    <div class="blob blob--1" aria-hidden="true"></div>
+    <div class="blob blob--2" aria-hidden="true"></div>
+    <div class="gridlines" aria-hidden="true"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <a class="logo" href="#top" aria-label="Ir para o topo">
+      <span class="logo__mark">M</span>
+      <span class="logo__text">Portfolio</span>
+    </a>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#sobre" class="nav__link">Sobre</a>
+      <a href="#projetos" class="nav__link">Projetos</a>
+      <a href="#skills" class="nav__link">Skills</a>
+      <a href="#contato" class="nav__link">Contato</a>
+    </nav>
+
+    <div class="header__actions">
+      <!-- SELETOR DE CORES -->
+      <div class="palette-picker" aria-label="Escolher cor do tema">
+        <button class="palette-dot" data-palette="purple" title="Roxo"    style="--dot:#818cf8;" aria-label="Tema roxo"></button>
+        <button class="palette-dot" data-palette="blue"   title="Azul"    style="--dot:#38bdf8;" aria-label="Tema azul"></button>
+        <button class="palette-dot" data-palette="green"  title="Verde"   style="--dot:#34d399;" aria-label="Tema verde"></button>
+        <button class="palette-dot" data-palette="rose"   title="Rosa"    style="--dot:#fb7185;" aria-label="Tema rosa"></button>
+        <button class="palette-dot" data-palette="orange" title="Laranja" style="--dot:#fb923c;" aria-label="Tema laranja"></button>
+      </div>
+
+      <button class="btn btn--ghost" id="themeBtn" type="button" aria-label="Alternar tema">
+        <span class="btn__icon" aria-hidden="true">🌙</span>
+        <span class="btn__text" id="themeText">Escuro</span>
+      </button>
+
+      <a class="btn btn--primary" href="#contato">
+        Vamos conversar
+        <span class="btn__icon" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__content reveal">
+        <p class="pill">
+          <span class="dot" aria-hidden="true"></span>
+          Disponível para projetos • Back-end / Java / Python
+        </p>
+
+        <h1 class="hero__title">
+          Olá, eu sou <span class="gradient">Murilo Gianelli Borges</span>.
+        </h1>
+
+        <p class="hero__subtitle">
+          Eu crio sistemas back-end robustos, APIs escaláveis e automações inteligentes.
+          Gosto de código limpo, arquitetura sólida e soluções que funcionam de verdade.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--secondary" href="https://github.com/gianellimurilo" target="_blank" rel="noopener">
+            GitHub
+            <span class="btn__icon" aria-hidden="true">↗</span>
+          </a>
+          <a class="btn btn--secondary" href="https://br.linkedin.com/in/murilo-gianelli-borges-0661a1362" target="_blank" rel="noopener">
+            LinkedIn
+            <span class="btn__icon" aria-hidden="true">↗</span>
+          </a>
+          <button class="btn btn--secondary" id="copyEmail" type="button" aria-label="Copiar e-mail">
+            Copiar e-mail
+            <span class="btn__icon" aria-hidden="true">📋</span>
+          </button>
+        </div>
+
+        <div class="stats reveal reveal--delay1">
+          <div class="stat">
+            <span class="stat__num" data-counter="7">0</span>
+            <span class="stat__label">Projetos</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-counter="6">0</span>
+            <span class="stat__label">Tecnologias</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-counter="3">0</span>
+            <span class="stat__label">Linguagens</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__card reveal reveal--delay2" role="img" aria-label="Cartão com informações de destaque">
+        <div class="profile">
+          <div class="profile__avatar" aria-hidden="true">
+            <span>MB</span>
+          </div>
+
+          <div class="profile__info">
+            <h2 class="profile__name">Murilo G. Borges</h2>
+            <p class="profile__role">Desenvolvedor Back-end</p>
+            <p class="profile__meta">Ribeirão Preto • SP</p>
+          </div>
+        </div>
+
+        <div class="mini-grid">
+          <div class="mini">
+            <span class="mini__k">Stack</span>
+            <span class="mini__v">Java • Python</span>
+          </div>
+          <div class="mini">
+            <span class="mini__k">FrameWork</span>
+            <span class="mini__v">FastAPI • Django • Spring Boot </span>
+          </div>
+          <div class="mini">
+            <span class="mini__k">Trabalho</span>
+            <span class="mini__v">Presencial • Remoto</span>
+          </div>
+          <div class="mini">
+            <span class="mini__k">Nível</span>
+            <span class="mini__v">Júnior</span>
+          </div>
+        </div>
+
+        <div class="hero__hint">
+          Passe o mouse nos cards 🙂
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+      <div class="section__head reveal">
+        <h2 class="section__title">Sobre</h2>
+        <p class="section__desc">
+            Uma visão clara sobre quem sou, o que faço e os valores que guiam meu trabalho.
+        </p>
+      </div>
+
+      <div class="about">
+        <article class="card reveal">
+          <h3 class="card__title">Quem eu sou</h3>
+          <p class="card__text">
+            Desenvolvedor Back-end focado em <strong>Java</strong> e <strong>Python</strong>.
+Minha atuação vai além da escrita de código, envolve <strong>análise de requisitos</strong>,
+<strong>tomada de decisões técnicas</strong> e construção de <strong>sistemas que sustentam
+operações reais</strong>. Priorizo <strong>boas práticas</strong>, <strong>testes</strong>,
+<strong>documentação</strong> e <strong>arquitetura limpa</strong>. Acredito que software
+bem feito é aquele que funciona de forma <strong>silenciosa</strong>, <strong>estável</strong>
+e <strong>escalável</strong>.          </p>
+        </article>
+
+        <article class="card reveal reveal--delay1">
+          <h3 class="card__title">O que eu faço</h3>
+          <p class="card__text">
+            Minha atuação concentra-se no desenvolvimento da <strong>camada lógica</strong> das aplicações.
+Isso inclui criação de <strong>APIs RESTful</strong>, <strong>modelagem</strong> e
+<strong>otimização de bancos de dados</strong> relacionais e não-relacionais, desenvolvimento
+de <strong>microsserviços</strong> e <strong>automação de processos internos</strong>. Utilizo
+<strong>Java</strong> e <strong>Python</strong> como tecnologias principais, sempre aplicando
+<strong>padrões de projeto</strong>, <strong>testes automatizados</strong> e
+<strong>documentação técnica</strong> para garantir <strong>manutenibilidade</strong>
+e <strong>confiabilidade</strong>.          </p>
+        </article>
+
+        <article class="card reveal reveal--delay2">
+          <h3 class="card__title">Meu objetivo</h3>
+          <p class="card__text">
+            Meu objetivo é ir <strong>além do código</strong>: quero entender o
+<strong>problema</strong> antes de escrever a <strong>solução</strong>. Busco evoluir
+constantemente em <strong>arquitetura de software</strong>, <strong>boas práticas</strong>
+e <strong>novas tecnologias</strong> — sempre com o propósito de criar
+<strong>sistemas que façam diferença de verdade</strong>. A meta é clara: construir
+produtos <strong>sólidos</strong>, <strong>escaláveis</strong> e que as pessoas
+<strong>confiem em usar todos os dias</strong>.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section">
+      <div class="section__head reveal">
+        <h2 class="section__title">Projetos</h2>
+        <p class="section__desc">Alguns dos meus <strong>projetos pessoais</strong>, Clique nos cards para ver mais detalhes.</p>
+      </div>
+
+      <div class="grid">
+        <article class="project card reveal">
+          <div class="project__top">
+            <span class="tag">Java</span>
+            <span class="tag tag--accent">API</span>
+          </div>
+          <h3 class="card__title">API REST — Gerenciamento</h3>
+          <p class="card__text">
+            API RESTful com Spring Boot, autenticação JWT e CRUD completo conectado a banco de dados.
+          </p>
+          <div class="project__actions">
+            <a class="link" href="#" aria-label="Abrir demo do projeto">Demo</a>
+            <a class="link" href="https://github.com/gianellimurilo" target="_blank" rel="noopener" aria-label="Abrir repositório">Código ↗</a>
+          </div>
+        </article>
+
+        <article class="project card reveal reveal--delay1">
+          <div class="project__top">
+            <span class="tag">Python</span>
+            <span class="tag tag--accent">Automação</span>
+          </div>
+          <h3 class="card__title">Automação de Processos</h3>
+          <p class="card__text">
+            Scripts Python para automação de tarefas repetitivas, integração com APIs externas e geração de relatórios.
+          </p>
+          <div class="project__actions">
+            <a class="link" href="#" aria-label="Abrir demo do projeto">Demo</a>
+            <a class="link" href="https://github.com/gianellimurilo" target="_blank" rel="noopener" aria-label="Abrir repositório">Código ↗</a>
+          </div>
+        </article>
+
+        <article class="project card reveal reveal--delay2">
+          <div class="project__top">
+            <span class="tag">Full Stack</span>
+            <span class="tag tag--accent">Web</span>
+          </div>
+          <h3 class="card__title">Dashboard Educacional</h3>
+          <p class="card__text">
+            Painel com filtros, cards e gráficos. Back-end em Java, front-end responsivo e moderno.
+          </p>
+          <div class="project__actions">
+            <a class="link" href="#" aria-label="Abrir demo do projeto">Demo</a>
+            <a class="link" href="https://github.com/gianellimurilo" target="_blank" rel="noopener" aria-label="Abrir repositório">Código ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section__head reveal">
+        <h2 class="section__title">Skills</h2>
+        <p class="section__desc">
+          Cada projeto pede a ferramenta certa. Aqui estão as tecnologias que domino
+          e uso para construir soluções back-end sólidas e eficientes.
+        </p>
+      </div>
+
+      <div class="skills">
+        <div class="card reveal">
+          <h3 class="card__title">Back-end</h3>
+          <div class="chips">
+            <span class="chip">Java</span>
+            <span class="chip">Python</span>
+            <span class="chip">Spring Boot</span>
+            <span class="chip">Flask</span>
+            <span class="chip">Django</span>
+            <span class="chip">APIs RESTful</span>
+          </div>
+        </div>
+
+        <div class="card reveal reveal--delay1">
+          <h3 class="card__title">Banco de Dados</h3>
+          <div class="chips">
+            <span class="chip">MySQL</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">SQL</span>
+          </div>
+        </div>
+
+        <div class="card reveal reveal--delay2">
+          <h3 class="card__title">Ferramentas</h3>
+          <div class="chips">
+            <span class="chip">Git/GitHub</span>
+            <span class="chip">VS Code</span>
+            <span class="chip">IntelliJ</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Postman</span>
+            <span class="chip">Linux</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+      <div class="section__head reveal">
+        <h2 class="section__title">Contato</h2>
+        <p class="section__desc">Entre em contato caso tenha algum projeto ou oportunidade.</p>
+      </div>
+
+      <div class="contact card reveal">
+        <div class="contact__text">
+          <h3 class="card__title">Vamos construir algo juntos?</h3>
+          <p class="card__text">
+            Me chama no LinkedIn ou veja meus projetos no GitHub. Se preferir, copie meu e-mail.
+          </p>
+
+          <div class="contact__actions">
+            <a class="btn btn--primary" href="https://br.linkedin.com/in/murilo-gianelli-borges-0661a1362" target="_blank" rel="noopener">
+              LinkedIn
+              <span class="btn__icon" aria-hidden="true">↗</span>
+            </a>
+            <a class="btn btn--secondary" href="https://github.com/gianellimurilo" target="_blank" rel="noopener">
+              GitHub
+              <span class="btn__icon" aria-hidden="true">↗</span>
+            </a>
+            <button class="btn btn--secondary" id="copyEmail2" type="button">
+              Copiar e-mail
+              <span class="btn__icon" aria-hidden="true">📋</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="contact__meta">
+          <div class="meta">
+            <span class="meta__k">E-mail</span>
+            <span class="meta__v" id="emailText">murilogianellidev@gmail.com</span>
+          </div>
+          <div class="meta">
+            <span class="meta__k">Local</span>
+            <span class="meta__v">Ribeirão Preto • São Paulo</span>
+          </div>
+          <div class="meta">
+            <span class="meta__k">Telefone</span>
+            <span class="meta__v">+16 992924250</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> • Murilo Gianelli Borges</p>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
